@@ -4,6 +4,13 @@ The dashboard uses `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` from
 `PersonalSensorDashboard/.env` to load, subscribe to, and insert readings.
 There is no ingest token or Edge Function.
 
+For GitHub Pages deployments, add repository Actions secrets named
+`SUPABASE_URL` and `SUPABASE_ANON_KEY` under **Settings → Secrets and variables
+→ Actions**. The deployment workflow supplies them as Vite build variables.
+Enable GitHub Pages for the repository with **Settings → Pages → Source:
+GitHub Actions**. Deployments run on pushes to `main` and can also be started
+manually from the Actions tab.
+
 Run [`schema.sql`](./schema.sql) in the Supabase SQL Editor to create the
 `public.sensor_readings` table and enable dashboard reads and inserts. Then
 refresh the dashboard, click **Connect Arduino**, and choose the serial port.
