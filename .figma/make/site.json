@@ -1,0 +1,10 @@
+{
+  "description": "Monitor personal sensor readings with a clear current-value card and trend graph, helping users quickly understand how measurements change over time.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
